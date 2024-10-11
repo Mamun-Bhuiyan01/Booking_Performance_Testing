@@ -133,7 +133,7 @@ $(document).ready(function() {
         widgets: ['zebra']
     });
 
-    var data = {"OkPercent": 100.0, "KoPercent": 0.0};
+    var data = {"OkPercent": 99.93650793650794, "KoPercent": 0.06349206349206349};
     var dataset = [
         {
             "label" : "FAIL",
@@ -173,7 +173,7 @@ $(document).ready(function() {
     });
 
     // Creates APDEX table
-    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.8984920634920635, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.9794444444444445, 500, 1500, "Delete Booking"], "isController": false}, {"data": [0.9788888888888889, 500, 1500, "Update Booking with Put"], "isController": false}, {"data": [0.9805555555555555, 500, 1500, "Create Booking"], "isController": false}, {"data": [0.9811111111111112, 500, 1500, "Update Booking with Patch"], "isController": false}, {"data": [0.9861111111111112, 500, 1500, "Get Booking"], "isController": false}, {"data": [0.3972222222222222, 500, 1500, "Create Token"], "isController": false}]}, function(index, item){
+    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.45206349206349206, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.38, 500, 1500, "Delete Booking"], "isController": false}, {"data": [0.3244444444444444, 500, 1500, "Update Booking with Put"], "isController": false}, {"data": [0.6266666666666667, 500, 1500, "Create Booking"], "isController": false}, {"data": [0.29833333333333334, 500, 1500, "Update Booking with Patch"], "isController": false}, {"data": [0.5738888888888889, 500, 1500, "Get Booking"], "isController": false}, {"data": [0.38722222222222225, 500, 1500, "Create Token"], "isController": false}]}, function(index, item){
         switch(index){
             case 0:
                 item = item.toFixed(3);
@@ -187,7 +187,7 @@ $(document).ready(function() {
     }, [[0, 0]], 3);
 
     // Create statistics table
-    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 6300, 0, 0.0, 430.3036507936514, 245, 4688, 257.0, 1011.0, 1046.0, 2520.0, 428.3965728274174, 369.39934168026656, 126.52281594247246], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["Delete Booking", 900, 0, 0.0, 289.16777777777764, 246, 1282, 256.0, 347.79999999999995, 481.0, 795.99, 79.16959887403237, 58.316106615059816, 18.555374736101335], "isController": false}, {"data": ["Update Booking with Put", 900, 0, 0.0, 292.3666666666663, 246, 1490, 257.0, 326.0, 480.4999999999993, 857.95, 87.7791865795377, 79.07022639715206, 41.40365929484054], "isController": false}, {"data": ["Create Booking", 900, 0, 0.0, 290.27666666666727, 245, 977, 255.0, 311.0, 401.94999999999993, 947.9300000000001, 87.23466123873219, 81.13505015993022, 38.25035439081128], "isController": false}, {"data": ["Update Booking with Patch", 900, 0, 0.0, 288.99222222222204, 247, 1327, 257.0, 313.9, 476.5499999999994, 832.98, 87.73640085786704, 79.31576269740691, 23.647701793721975], "isController": false}, {"data": ["Get Booking", 1800, 0, 0.0, 275.42888888888893, 245, 1481, 254.0, 271.9000000000001, 304.0, 847.95, 155.42699248769537, 140.39091507641828, 31.26753950436059], "isController": false}, {"data": ["Create Token", 900, 0, 0.0, 1300.4644444444443, 981, 4688, 1023.0, 2223.8, 2655.85, 3473.8900000000003, 74.70739603220719, 56.62684433883954, 18.7498054494895], "isController": false}]}, function(index, item){
+    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 6300, 4, 0.06349206349206349, 1076.8587301587286, 279, 21119, 1017.0, 1749.0, 1811.9499999999998, 2403.9199999999983, 253.27651362868858, 218.91972258935033, 74.79053806183164], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["Delete Booking", 900, 1, 0.1111111111111111, 1204.714444444445, 281, 2761, 1324.5, 1768.0, 1818.9499999999998, 2310.92, 43.58775668345603, 32.13821405220845, 10.215076445055212], "isController": false}, {"data": ["Update Booking with Put", 900, 1, 0.1111111111111111, 1306.367777777778, 280, 2997, 1388.0, 1771.0, 1812.0, 2367.94, 42.450827791141926, 38.33872628354794, 20.02241013100797], "isController": false}, {"data": ["Create Booking", 900, 0, 0.0, 705.0733333333336, 279, 3909, 679.0, 1042.8, 1075.9499999999998, 1751.89, 42.41081947127845, 39.566588668064654, 18.596150334574244], "isController": false}, {"data": ["Update Booking with Patch", 900, 1, 0.1111111111111111, 1342.3533333333326, 287, 2568, 1395.5, 1772.9, 1816.9499999999998, 2351.8500000000004, 42.43481540855297, 38.40240287142251, 11.436726080319676], "isController": false}, {"data": ["Get Booking", 1800, 0, 0.0, 776.8733333333328, 279, 2319, 816.0, 1063.0, 1085.9499999999998, 1626.94, 81.61044613710555, 73.84514488687886, 16.417549362985127], "isController": false}, {"data": ["Create Token", 900, 1, 0.1111111111111111, 1425.7555555555562, 1110, 21119, 1141.0, 2146.9, 2568.85, 3709.4800000000005, 40.37322806387942, 30.780205623093483, 10.12147540317154], "isController": false}]}, function(index, item){
         switch(index){
             // Errors pct
             case 3:
@@ -217,7 +217,7 @@ $(document).ready(function() {
     }, [[0, 0]], 0, summaryTableHeader);
 
     // Create error table
-    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": []}, function(index, item){
+    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": [{"data": ["Non HTTP response code: org.apache.http.conn.HttpHostConnectException/Non HTTP response message: Connect to restful-booker.herokuapp.com:443 [restful-booker.herokuapp.com/23.22.130.173] failed: Connection timed out: connect", 1, 25.0, 0.015873015873015872], "isController": false}, {"data": ["403/Forbidden", 3, 75.0, 0.047619047619047616], "isController": false}]}, function(index, item){
         switch(index){
             case 2:
             case 3:
@@ -228,7 +228,7 @@ $(document).ready(function() {
     }, [[1, 1]]);
 
         // Create top5 errors by sampler
-    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 6300, 0, "", "", "", "", "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}]}, function(index, item){
+    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 6300, 4, "403/Forbidden", 3, "Non HTTP response code: org.apache.http.conn.HttpHostConnectException/Non HTTP response message: Connect to restful-booker.herokuapp.com:443 [restful-booker.herokuapp.com/23.22.130.173] failed: Connection timed out: connect", 1, "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": ["Delete Booking", 900, 1, "403/Forbidden", 1, "", "", "", "", "", "", "", ""], "isController": false}, {"data": ["Update Booking with Put", 900, 1, "403/Forbidden", 1, "", "", "", "", "", "", "", ""], "isController": false}, {"data": [], "isController": false}, {"data": ["Update Booking with Patch", 900, 1, "403/Forbidden", 1, "", "", "", "", "", "", "", ""], "isController": false}, {"data": [], "isController": false}, {"data": ["Create Token", 900, 1, "Non HTTP response code: org.apache.http.conn.HttpHostConnectException/Non HTTP response message: Connect to restful-booker.herokuapp.com:443 [restful-booker.herokuapp.com/23.22.130.173] failed: Connection timed out: connect", 1, "", "", "", "", "", "", "", ""], "isController": false}]}, function(index, item){
         return item;
     }, [[0, 0]], 0);
 
